@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app {
+  width: 100%;
+
+  border: grey 2px solid;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #ffffff;
+
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background: rgba(3, 252, 195, 0.21);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  transition-duration: 0.2s;
+  height: calc(100vh - 50px);
+  width: 100%;
+  background: rgba(88, 180, 161, 0.51);
+}
+.left {
+  display: flex;
+  top: 0;
+  transition-duration: 0.2s;
+  left: -500px;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 20%;
+  height: 100%;
+
+}
+.title {
+  margin: 20px 0;
+}
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+  height: 40px !important;
+  transition-duration: 0.2s;
+  cursor: pointer;
+
+}
+.right {
+  position: relative;
+  overflow: auto;
+  background: #2f6a3e;
+  width: 100%;
+  height: 100%;
+
+}
+.category:hover {
+  background: wheat;
+}
+.left>a {
+  width: 100%;
+  height: 40px;
+}
+.search-main {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 40px;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+}
+.todo-form {
+  display: flex;
+  width: 500px;
+  height: 40px;
+}
+.todo-form > input {
+  width: 100%;
+  height: 100%;
+}
+.changeType {
+
+  height: 30px;
+}
+.todos-style {
+
+
+  padding: 30px;
+  display: flex;
+
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+}
+.todo-style {
+  background: grey;
+  margin-bottom: 30px;
+  position: relative;
+  transition-duration: 2s;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 30px;
+  padding-left: 30px;
+  width: 50%;
+  height: 200px;
+
+}
+.todo-style h2 {
+  margin-bottom: 20px;
+}
+.done {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+
+}
+.remove {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+
+}
+.options .import {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  font-size: 30px;
+}
+.import input {
+  margin-right: 30px;
+  width: 30px;
+  height: 30px;
+  color: wheat;
+}
+.options {
+  margin-left: 30px;
+
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+}
+.import {
+  display: flex;
+}
+.description {
+  width: 300px;
+  height: 300px;
+}
+.description textarea {
+  padding: 20px;
+  width: 1000px;
+  height: 200px;
+  resize: none;
+
+}
+.create_todo {
+
+  display: grid;
+  grid-template-columns:  300px 300px;
+  align-items: center;
+  justify-content: center;
+}
+.active-menu {
+  transform-origin: center center;
+  transform: rotate(180deg);
+
+}
+.type_and_imp {
+  margin-left: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.big_todo {
+  width: 70%;
+  height: 1000px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.big_t {
+  width: 100%;
+}
+.small_t {
+
+  width: 370px;
+  height: 50px;
+  padding-top: 10px;
+}
+.small_todo {
+  width: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
